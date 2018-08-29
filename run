@@ -1,14 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+include "src/Dates/BirthDays.php";
+
 $birthDate = "1978-09-22";
-$todayDate = date("Y-m-d");
-
-$birthTime = strtotime($birthDate);
-$todayTime = strtotime($todayDate);
-
-$totalSecs = $todayTime - $birthTime;
-$totalDays = floor($totalSecs / 3600 / 24);
+$days = new \Volosatov\Dates\BirthDays($birthDate);
+$totalDays = $days->findTotalDays();
 
 echo "$birthDate : $totalDays\n";
 
