@@ -1,0 +1,18 @@
+{
+    "name": "volosatov/dates",
+    "description": "Find days number from birthday to today",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jevgenij Volosatov",
+            "email": "fformula@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Volosatov\\" : "src"
+        }
+    }
+}

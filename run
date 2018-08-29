@@ -1,11 +1,10 @@
 #!/usr/bin/env php
 <?php
 
-include 'src/Dates/BirthDays.php';
+require_once 'vendor/autoload.php';
 
 $birthDate = '1978-09-22';
 $days = new \Volosatov\Dates\BirthDays($birthDate);
 $totalDays = $days->findTotalDays();
 
 echo "$birthDate : $totalDays\n";
-
